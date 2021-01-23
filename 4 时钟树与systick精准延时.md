@@ -1,7 +1,7 @@
 <!--
  * @Author: your name
  * @Date: 2021-01-23 21:11:19
- * @LastEditTime: 2021-01-23 21:39:33
+ * @LastEditTime: 2021-01-23 21:42:35
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: \markdown\4 时钟树与systick精准延时.md
@@ -29,4 +29,4 @@
 ## 2 systick 系统定时器
 &emsp;SysTick—系统定时器是属于 CM4 内核中的一个外设，定时器是属于 CM4 内核的外设，所以有关寄存器的定义和配置函数在`core_cm4.h` 文件中。
 
-一般我们设置系统时钟 SYSCLK 等于 100MHz。**当重装载数值寄存器的 值递减到 0 的时候，系统定时器就产生一次中断，以此循环往复**
+系统定时器是一个 24bit 的向下递减的计数器，一般我们设置系统时钟 SYSCLK 等于 100MHz。**当重装载数值寄存器的 值递减到 0 的时候，系统定时器就产生一次中断，以此循环往复**
